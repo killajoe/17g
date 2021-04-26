@@ -54,6 +54,7 @@ additional_user_groups:
 
 ## Pre/Post operations section
 post_install_commands:
-   - chroot || /usr/bin/cleaner_script.sh
+   - /usr/bin/cleaner_script.sh
+   - chroot || /usr/bin/chrooted_cleaner_script.sh
 # pre_install_commands:
 #   - cp /home/liveuser/mkinitcpio.conf /etc/mkinitcpio.conf
