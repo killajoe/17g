@@ -1,16 +1,16 @@
 ### 17g installer config
 
 ## Distro section
-# distro_codename: linux
-# distro_title: 17G
+distro_codename: endeavouros-next
+distro_title: EndeavourOS
 # distribution: auto
 # copyright: 17g Developer Team
 
 ## Base options section
 # loop_directory: /dev/loop0
-# log_file: /var/log/17g-installer.log
-# gtk_theme: default
-# welcome_screen: true
+log_file: /var/log/17g-installer.log
+gtk_theme: default
+welcome_screen: true
 # exclude_dirs:
 #   - /home
 
@@ -53,7 +53,7 @@
 # min_password_length: 1
 
 ## Pre/Post operations section
-# post_install_commands:
-#   - echo "BRUH"
-# pre_install_commands:
-#   - echo "BRUH"
+post_install_commands:
+   - /usr/bin/chrooted_cleaner_script.sh
+pre_install_commands:
+   - cp /home/liveuser/mkinitcpio.conf /etc/mkinitcpio.conf
