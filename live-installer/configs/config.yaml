@@ -15,22 +15,22 @@ welcome_screen: true
 #   - /home
 
 ## Base system section
-# initramfs_system: auto 
-# using_shell: /bin/bash
+initramfs_system: auto 
+using_shell: /bin/bash
 # use_reboot: false
 # remove_packages:
 #   - 17g-installer
 
 ## User section
 # list_users_when_auto_login: true
-# autologin_enabled: true
-# auto_partition_enabled: true
-# set_root_password: true
-# use_chpasswd: true
-# additional_user_groups:
-#   - audio
-#   - video
-#   - netdev
+autologin_enabled: true
+auto_partition_enabled: true
+set_root_password: true
+use_chpasswd: true
+additional_user_groups:
+   - wheel
+   - sys
+   - rfkill
 
 ## Partitioning section
 # manual_partition_enabled: true 
