@@ -54,6 +54,6 @@ welcome_screen: true
 
 ## Pre/Post operations section
 post_install_commands:
-   - /usr/bin/chrooted_cleaner_script.sh
+   - chroot || /usr/bin/chrooted_cleaner_script.sh
 pre_install_commands:
    - cp /home/liveuser/mkinitcpio.conf /etc/mkinitcpio.conf
