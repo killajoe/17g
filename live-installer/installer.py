@@ -619,9 +619,9 @@ class InstallerEngine:
         # remove pacman
         self.update_progress(_("Clearing package manager"),True)
         log(" --> Clearing package manager")
-        log(config.get("remove_packages", ["17g-live-installer"]))
+        log(config.get("remove_packages", ["17g-installer"]))
         run("chroot||yes | {}".format(config.package_manager(
-            "remove_package_with_unusing_deps", config.get("remove_packages", ["17g-live-installer"]))))
+            "remove_package_with_unusing_deps", config.get("remove_packages", ["17g-installer"]))))
 
         if self.setup.luks:
             with open("/target/etc/default/grub.d/61_live-installer.cfg", "w") as f:
