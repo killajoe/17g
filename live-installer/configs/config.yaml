@@ -18,8 +18,8 @@ welcome_screen: true
 initramfs_system: auto 
 using_shell: /bin/bash
 # use_reboot: false
-# remove_packages:
-#   - 17g-installer
+remove_packages:
+   - 17g-live-installer
 
 ## User section
 # list_users_when_auto_login: true
